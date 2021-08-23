@@ -1,0 +1,168 @@
+@import "abstracts/__abstracts-dir";
+
+@import "base/__base-dir";
+
+@import "components/__components-dir";
+
+body{
+    max-width: 1440px;
+    height: 100vh;
+    font-family: $font-main;
+    font-size: 14px;
+    background-color: $light-grayish-cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.percent__options-btn{
+    @include btn-primary;
+}
+
+.logo{
+    margin-bottom: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    background-color: $white;
+    padding: 40px;
+    border-radius: 20px;
+    
+    .options__menu{
+        position: relative;
+        color: $very-dark-grayish-cyan;
+        font-weight: 700;
+        p:first-of-type{
+            margin-top: 0;
+        }
+        p{
+            font-size: 1.1rem;
+            margin: 40px 0 20px 0;
+        }
+        .bill{
+            @include textarea;
+        }
+        .amount-people{
+            @include textarea;
+        }
+        .dolar-icon{
+            position: absolute;
+            left: 20px;
+            top: 55px;
+        }
+        .person-icon{
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+        }
+        .percent__options{
+            display: grid;
+            grid-template-columns: repeat(3, 120px);
+            gap: 10px;
+            input{
+                padding: 5px 20px;
+                background-color: $light-grayish-white;
+                border: none;
+                border-radius: 3px;
+                outline: none;
+                font-size: 1.3rem;
+                font-family: $font-main;
+                font-weight: 700;
+                color: $very-dark-cyan;
+                direction:rtl;
+                cursor: pointer;
+                &:focus{
+                    border: 2px solid $strong-cyan;
+                }
+            }
+        }
+    }
+    .result__menu{
+        background-color: $very-dark-cyan;
+        border-radius: 10px;
+        padding: 50px 40px 40px;
+        font-size: 1.1rem;
+        position: relative;
+        .amount__tip{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            'amount result'
+            'person result';
+            margin-bottom: 30px;
+            color: $strong-cyan;
+            h2{
+                color: $white;
+                grid-area: amount;
+                font-weight: 700;
+            }
+            p:first-of-type{
+                color: $light-grayish-cyan;
+                grid-area: person;
+                font-size: 1rem;
+            }
+            h3{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            .result__tip{
+                grid-area: result;
+            }
+        }
+        .amount__bill{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            'amount result'
+            'person result';
+            color: $strong-cyan;
+            h2{
+                grid-area: amount;
+                color: $white;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            p:first-of-type{
+                color: $light-grayish-cyan;
+                grid-area:person;
+                font-size: 1rem;
+            }
+            h3{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            .result__total{
+                grid-area: result;
+            }
+        }
+        button{
+            background-color: hsl(183, 100%, 23%);
+            border: none;
+            width: 80%;
+            color: $very-dark-cyan;
+            font-family: $font-main;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            border-radius: 5px;
+            padding: 10px 100px;
+            position: absolute;
+            bottom: 30px;
+            cursor: pointer;
+            &:active{
+                background-color: $strong-cyan;
+            }
+        }
+    }
+}
+
+.attribution{
+    margin-top: 20px;
+    color: $very-dark-grayish-cyan;
+    a{
+        color: $very-dark-cyan;
+    }
+}

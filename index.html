@@ -3,59 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/scss/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header class="logo">
-    <img src="./images/logo.svg" alt="Splitter logo">
+    <img src="./assets/img/logo.svg" alt="Splitter logo">
   </header>
   
   <section class="container">
     
     <div class="options__menu">
       <p>Bill</p>
-      <input type="number" class="bill">
+      <textarea id="billtext" class="bill"></textarea>
+      <img src="/assets/img/icon-dollar.svg" alt="" class="dolar-icon">
       <p>Select Tip %</p>
       <div class="percent__options">
-        <button class="percent__five">5%</button>
-        <button class="percent__ten">10%</button>
-        <button class="percent__fifteen">15%</button>
-        <button class="percent__twenty-five">25%</button>
-        <button class="percent__fifty">50%</button>
-        <button class="percent__custom">Custom</button>
+        <button id='5'
+        class="percent__options-btn five">5%</button>
+        <button id='10' class="percent__options-btn ten">10%</button>
+        <button id='15' class="percent__options-btn fifteen">15%</button>
+        <button id='25' class="percent__options-btn twenty-five">25%</button>
+        <button id='50'class="percent__options-btn fifty">50%</button>
+        <input type="text" class="percent__options-custom custom" placeholder="Custom">
       </div>
       <p>Number of People</p>
-      <input type="number" class="people">
+      <textarea id="amount-people" class="amount-people"></textarea>
+      <img src="/assets/img/icon-person.svg" alt="" class="person-icon">
     </div>
 
     <div class="result__menu">
       <div class="amount__tip">
-        <p>Tip Amount</p>
-        <p>/ person</p>
-        <p class="result__tip"></p>
+        <h2 class="amount">Tip Amount</h2>
+        <p class="person">/ person</p>
+        <h3 class="result__tip">$0.00</h3>
       </div>
       <div class="amount__bill">
-        <p>Total</p>
-        <p>/ person</p>
-        <p class="result__total"></p>
+        <h2 class="amount">Total</h2>
+        <p class="person">/ person</p>
+        <h3 class="result__total">$0.00</h3>
       </div>
+      <button class="reset">Reset</button>
     </div>
-    <button class="reset">Reset</button>
   </section>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Rafael Leal</a>.
   </div>
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>

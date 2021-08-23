@@ -1,0 +1,7 @@
+
+@mixin fontPrimary {
+    font-family: $font-primary;
+    letter-spacing: 2px;
+    color: $black;
+    font-size: 1rem;
+}

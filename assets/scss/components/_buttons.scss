@@ -1,0 +1,15 @@
+@mixin btn-primary {
+    border: none;
+    border-radius: 5px;
+    font-family: $font-main;
+    background-color: $very-dark-cyan;
+    color: $white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: .5rem 2.6rem;
+    cursor: pointer;
+    &:active{
+        background-color: $strong-cyan;
+        color: $very-dark-cyan;
+    }
+}
