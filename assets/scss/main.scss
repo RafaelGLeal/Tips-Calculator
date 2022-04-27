@@ -19,7 +19,10 @@ body{
 .percent__options-btn{
     @include btn-primary;
 }
-
+.percent__options-btn.active{
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+}
 .logo{
     margin-bottom: 50px;
 }
@@ -104,9 +107,16 @@ body{
                 grid-area: person;
                 font-size: 1rem;
             }
+           
             h3{
-                font-size: 4rem;
+                font-size: 3.5rem;
                 font-weight: 700;
+                position: relative;
+                &::before{
+                    content: '$';
+                    position: absolute;
+                    left: -25%;
+                }
             }
             .result__tip{
                 grid-area: result;
@@ -119,6 +129,7 @@ body{
             'amount result'
             'person result';
             color: $strong-cyan;
+            position: relative;
             h2{
                 grid-area: amount;
                 color: $white;
@@ -131,12 +142,19 @@ body{
                 font-size: 1rem;
             }
             h3{
-                font-size: 4rem;
+                font-size: 3.5rem;
                 font-weight: 700;
+                position: relative;
+                &::before{
+                    content: '$';
+                    position: absolute;
+                    left: -25%;
+                }
             }
             .result__total{
                 grid-area: result;
             }
+            
         }
         button{
             background-color: hsl(183, 100%, 23%);

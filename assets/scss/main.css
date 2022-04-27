@@ -52,7 +52,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
 }
 
 table {
@@ -61,7 +61,7 @@ table {
 }
 
 a {
-  color: black;
+  color: hsl(0deg, 0%, 0%);
 }
 
 /*
@@ -71,58 +71,46 @@ Files inside this folder can contain global styles used in the project.
 @-webkit-keyframes moveButton {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(200px);
-            transform: translateY(200px);
+    transform: translateY(200px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 @keyframes moveButton {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(200px);
-            transform: translateY(200px);
+    transform: translateY(200px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
 @-webkit-keyframes moveButtonRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    transform: translateX(200px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
 @keyframes moveButtonRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    transform: translateX(200px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
-
 @-webkit-keyframes fade {
   0% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
+    transform: translateX(-200px);
     opacity: 0;
   }
   50% {
@@ -132,11 +120,9 @@ Files inside this folder can contain global styles used in the project.
     opacity: 1;
   }
 }
-
 @keyframes fade {
   0% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
+    transform: translateX(-200px);
     opacity: 0;
   }
   50% {
@@ -146,181 +132,135 @@ Files inside this folder can contain global styles used in the project.
     opacity: 1;
   }
 }
-
 @-webkit-keyframes flame {
   0% {
-    -webkit-transform: skewY(-2deg);
-            transform: skewY(-2deg);
-    -webkit-transform-origin: center;
-            transform-origin: center;
+    transform: skewY(-2deg);
+    transform-origin: center;
   }
   25% {
-    -webkit-transform: skewX(2deg);
-            transform: skewX(2deg);
+    transform: skewX(2deg);
   }
   50% {
-    -webkit-transform: skewY(-2deg);
-            transform: skewY(-2deg);
+    transform: skewY(-2deg);
   }
   75% {
-    -webkit-transform: skewX(2deg);
-            transform: skewX(2deg);
+    transform: skewX(2deg);
   }
   100% {
-    -webkit-transform: skewY(-2deg);
-            transform: skewY(-2deg);
+    transform: skewY(-2deg);
   }
 }
-
 @keyframes flame {
   0% {
-    -webkit-transform: skewY(-2deg);
-            transform: skewY(-2deg);
-    -webkit-transform-origin: center;
-            transform-origin: center;
+    transform: skewY(-2deg);
+    transform-origin: center;
   }
   25% {
-    -webkit-transform: skewX(2deg);
-            transform: skewX(2deg);
+    transform: skewX(2deg);
   }
   50% {
-    -webkit-transform: skewY(-2deg);
-            transform: skewY(-2deg);
+    transform: skewY(-2deg);
   }
   75% {
-    -webkit-transform: skewX(2deg);
-            transform: skewX(2deg);
+    transform: skewX(2deg);
   }
   100% {
-    -webkit-transform: skewY(-2deg);
-            transform: skewY(-2deg);
+    transform: skewY(-2deg);
   }
 }
-
 @-webkit-keyframes navUp {
   0% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
-
 @keyframes navUp {
   0% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
+    transform: translateY(-50px);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
-
 @-webkit-keyframes playerUp {
   0% {
-    -webkit-transform: translateX(500px);
-            transform: translateX(500px);
+    transform: translateX(500px);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
-
 @keyframes playerUp {
   0% {
-    -webkit-transform: translateX(500px);
-            transform: translateX(500px);
+    transform: translateX(500px);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
-
 @-webkit-keyframes flameWobble {
   50% {
-    -webkit-transform: scale(1, 1.2) translate(0, -30px) rotate(-2deg);
-            transform: scale(1, 1.2) translate(0, -30px) rotate(-2deg);
+    transform: scale(1, 1.2) translate(0, -30px) rotate(-2deg);
   }
 }
-
 @keyframes flameWobble {
   50% {
-    -webkit-transform: scale(1, 1.2) translate(0, -30px) rotate(-2deg);
-            transform: scale(1, 1.2) translate(0, -30px) rotate(-2deg);
+    transform: scale(1, 1.2) translate(0, -30px) rotate(-2deg);
   }
 }
-
 @-webkit-keyframes flamefly {
   0% {
-    -webkit-transform: translate(0) rotate(180deg);
-            transform: translate(0) rotate(180deg);
+    transform: translate(0) rotate(180deg);
   }
   50% {
     opacity: 1;
   }
   100% {
-    -webkit-transform: translate(-20px, -100px) rotate(180deg);
-            transform: translate(-20px, -100px) rotate(180deg);
+    transform: translate(-20px, -100px) rotate(180deg);
     opacity: 0;
   }
 }
-
 @keyframes flamefly {
   0% {
-    -webkit-transform: translate(0) rotate(180deg);
-            transform: translate(0) rotate(180deg);
+    transform: translate(0) rotate(180deg);
   }
   50% {
     opacity: 1;
   }
   100% {
-    -webkit-transform: translate(-20px, -100px) rotate(180deg);
-            transform: translate(-20px, -100px) rotate(180deg);
+    transform: translate(-20px, -100px) rotate(180deg);
     opacity: 0;
   }
 }
-
 body {
   max-width: 1440px;
   height: 100vh;
   font-family: "Space Mono", monospace;
   font-size: 14px;
-  background-color: #c5e4e7;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: hsl(185deg, 41%, 84%);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .percent__options-btn {
   border: none;
   border-radius: 5px;
   font-family: "Space Mono", monospace;
-  background-color: #00494d;
-  color: white;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
   font-size: 1.3rem;
   font-weight: 700;
-  padding: .5rem 2.6rem;
+  padding: 0.5rem 2.6rem;
   cursor: pointer;
 }
 
-.percent__options-btn:active {
-  background-color: #26c0ab;
-  color: #00494d;
+.percent__options-btn.active {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
 }
 
 .logo {
@@ -328,35 +268,28 @@ body {
 }
 
 .container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   width: 70%;
-  background-color: white;
+  background-color: hsl(0deg, 0%, 100%);
   padding: 40px;
   border-radius: 20px;
 }
-
 .container .options__menu {
   position: relative;
-  color: #5e7a7d;
+  color: hsl(186deg, 14%, 43%);
   font-weight: 700;
 }
-
 .container .options__menu p:first-of-type {
   margin-top: 0;
 }
-
 .container .options__menu p {
   font-size: 1.1rem;
   margin: 40px 0 20px 0;
 }
-
 .container .options__menu .bill {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #f4fafa;
+  box-sizing: border-box;
+  background-color: hsl(189deg, 41%, 97%);
   border: none;
   border-radius: 3px;
   padding: 10px;
@@ -368,20 +301,17 @@ body {
   font-size: 1.2rem;
   font-family: "Space Mono", monospace;
   font-weight: 700;
-  color: #00494d;
+  color: hsl(183deg, 100%, 15%);
   overflow: hidden;
   direction: rtl;
   cursor: pointer;
 }
-
 .container .options__menu .bill:focus {
-  border: 2px solid #26c0ab;
+  border: 2px solid hsl(172deg, 67%, 45%);
 }
-
 .container .options__menu .amount-people {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #f4fafa;
+  box-sizing: border-box;
+  background-color: hsl(189deg, 41%, 97%);
   border: none;
   border-radius: 3px;
   padding: 10px;
@@ -393,143 +323,118 @@ body {
   font-size: 1.2rem;
   font-family: "Space Mono", monospace;
   font-weight: 700;
-  color: #00494d;
+  color: hsl(183deg, 100%, 15%);
   overflow: hidden;
   direction: rtl;
   cursor: pointer;
 }
-
 .container .options__menu .amount-people:focus {
-  border: 2px solid #26c0ab;
+  border: 2px solid hsl(172deg, 67%, 45%);
 }
-
 .container .options__menu .dolar-icon {
   position: absolute;
   left: 20px;
   top: 55px;
 }
-
 .container .options__menu .person-icon {
   position: absolute;
   left: 20px;
   bottom: 20px;
 }
-
 .container .options__menu .percent__options {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (120px)[3];
-      grid-template-columns: repeat(3, 120px);
+  grid-template-columns: repeat(3, 120px);
   gap: 10px;
 }
-
 .container .options__menu .percent__options input {
   padding: 5px 20px;
-  background-color: #f4fafa;
+  background-color: hsl(189deg, 41%, 97%);
   border: none;
   border-radius: 3px;
   outline: none;
   font-size: 1.3rem;
   font-family: "Space Mono", monospace;
   font-weight: 700;
-  color: #00494d;
+  color: hsl(183deg, 100%, 15%);
   direction: rtl;
   cursor: pointer;
 }
-
 .container .options__menu .percent__options input:focus {
-  border: 2px solid #26c0ab;
+  border: 2px solid hsl(172deg, 67%, 45%);
 }
-
 .container .result__menu {
-  background-color: #00494d;
+  background-color: hsl(183deg, 100%, 15%);
   border-radius: 10px;
   padding: 50px 40px 40px;
   font-size: 1.1rem;
   position: relative;
 }
-
 .container .result__menu .amount__tip {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: 'amount result' 'person result';
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "amount result" "person result";
   margin-bottom: 30px;
-  color: #26c0ab;
+  color: hsl(172deg, 67%, 45%);
 }
-
 .container .result__menu .amount__tip h2 {
-  color: white;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  color: hsl(0deg, 0%, 100%);
   grid-area: amount;
   font-weight: 700;
 }
-
 .container .result__menu .amount__tip p:first-of-type {
-  color: #c5e4e7;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  color: hsl(185deg, 41%, 84%);
   grid-area: person;
   font-size: 1rem;
 }
-
 .container .result__menu .amount__tip h3 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
+  position: relative;
 }
-
+.container .result__menu .amount__tip h3::before {
+  content: "$";
+  position: absolute;
+  left: -25%;
+}
 .container .result__menu .amount__tip .result__tip {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
   grid-area: result;
 }
-
 .container .result__menu .amount__bill {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: 'amount result' 'person result';
-  color: #26c0ab;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "amount result" "person result";
+  color: hsl(172deg, 67%, 45%);
+  position: relative;
 }
-
 .container .result__menu .amount__bill h2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: amount;
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   font-weight: 700;
   margin-bottom: 10px;
 }
-
 .container .result__menu .amount__bill p:first-of-type {
-  color: #c5e4e7;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  color: hsl(185deg, 41%, 84%);
   grid-area: person;
   font-size: 1rem;
 }
-
 .container .result__menu .amount__bill h3 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
+  position: relative;
 }
-
+.container .result__menu .amount__bill h3::before {
+  content: "$";
+  position: absolute;
+  left: -25%;
+}
 .container .result__menu .amount__bill .result__total {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
   grid-area: result;
 }
-
 .container .result__menu button {
-  background-color: #006f75;
+  background-color: hsl(183deg, 100%, 23%);
   border: none;
   width: 80%;
-  color: #00494d;
+  color: hsl(183deg, 100%, 15%);
   font-family: "Space Mono", monospace;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -540,17 +445,14 @@ body {
   bottom: 30px;
   cursor: pointer;
 }
-
 .container .result__menu button:active {
-  background-color: #26c0ab;
+  background-color: hsl(172deg, 67%, 45%);
 }
 
 .attribution {
   margin-top: 20px;
-  color: #5e7a7d;
+  color: hsl(186deg, 14%, 43%);
 }
-
 .attribution a {
-  color: #00494d;
-}
-/*# sourceMappingURL=main.css.map */
+  color: hsl(183deg, 100%, 15%);
+}/*# sourceMappingURL=main.css.map */

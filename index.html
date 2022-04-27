@@ -17,20 +17,19 @@
     
     <div class="options__menu">
       <p>Bill</p>
-      <textarea id="billtext" class="bill"></textarea>
+      <input id="billValue" class="bill" type="text" required>
       <img src="/assets/img/icon-dollar.svg" alt="" class="dolar-icon">
       <p>Select Tip %</p>
       <div class="percent__options">
-        <button id='5'
-        class="percent__options-btn five">5%</button>
-        <button id='10' class="percent__options-btn ten">10%</button>
-        <button id='15' class="percent__options-btn fifteen">15%</button>
-        <button id='25' class="percent__options-btn twenty-five">25%</button>
-        <button id='50'class="percent__options-btn fifty">50%</button>
-        <input type="text" class="percent__options-custom custom" placeholder="Custom">
+        <button data-percent="5" class="percent__options-btn ">5%</button>
+        <button data-percent="10" class="percent__options-btn ">10%</button>
+        <button data-percent="15" class="percent__options-btn ">15%</button>
+        <button data-percent="25" class="percent__options-btn ">25%</button>
+        <button data-percent="50" class="percent__options-btn ">50%</button>
+        <input data-percent="custom" type="text" class="percent__options-custom" placeholder="Custom">
       </div>
       <p>Number of People</p>
-      <textarea id="amount-people" class="amount-people"></textarea>
+      <input id="amountPeople" class="amount-people" type="text" required>
       <img src="/assets/img/icon-person.svg" alt="" class="person-icon">
     </div>
 
@@ -38,12 +37,12 @@
       <div class="amount__tip">
         <h2 class="amount">Tip Amount</h2>
         <p class="person">/ person</p>
-        <h3 class="result__tip">$0.00</h3>
+        <h3 class="result__tip">0.00</h3>
       </div>
       <div class="amount__bill">
         <h2 class="amount">Total</h2>
         <p class="person">/ person</p>
-        <h3 class="result__total">$0.00</h3>
+        <h3 class="result__total">0.00</h3>
       </div>
       <button class="reset">Reset</button>
     </div>
