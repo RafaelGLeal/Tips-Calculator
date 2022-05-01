@@ -30,7 +30,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/RafaelGLeal/Tips-Calculator/)
+- [Solution](https://github.com/RafaelGLeal/Tips-Calculator/blob/master/assets/js/main.js)
+- [Live](https://tipscalculatorfem.netlify.app/)
 
 ## My process
 
